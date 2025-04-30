@@ -1,0 +1,105 @@
+/* public/css/style.css */
+
+/* Body and Page Background */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #e1bee7);
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Content */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #00796b;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Heading Styling */
+h1, h2, h3 {
+    color: #4a148c;
+}
+
+/* Service Box Styling */
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #ffffff;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h4 {
+    color: #000000;
+}
+
+.service-box p {
+    color: #0e0e0e;
+}
+
+.service-box .btn {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.service-box .btn:hover {
+    background-color: #004d40;
+}
+
+/* Small Screen (Mobile) Responsive Design */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
